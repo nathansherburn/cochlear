@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="page">
+
+			<div class="number-card">
+				<div class="number-card-number"></div>
+			</div>
+
+			<div class="answer-page" style="display: none;">
+				<input class="answer" type="text" onfocus="this.blur();" readonly>
+				<div class="num-pad-container"> <!-- toggle this -->
+					<div class="num-pad-number" id="7">7</div>
+					<div class="num-pad-number" id="8">8</div>
+					<div class="num-pad-number" id="9">9</div>
+					<div class="num-pad-number" id="4">4</div>
+					<div class="num-pad-number" id="5">5</div>
+					<div class="num-pad-number" id="6">6</div>
+					<div class="num-pad-number" id="1">1</div>
+					<div class="num-pad-number" id="2">2</div>
+					<div class="num-pad-number" id="3">3</div>
+					<div class="num-pad-number num-pad-number-full" id="0">0</div>
+				</div>
+				<div class="side-buttons">
+					<div class="backspace"> back </div>
+					<div class="submit"> OK </div>
+				</div>
+			</div>
+
+			<div class="results-page" style="display: none;">
+				<div style="height: 25%;"></div>
+				<div class="results"></div>
+				<div class="next-button">next</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
